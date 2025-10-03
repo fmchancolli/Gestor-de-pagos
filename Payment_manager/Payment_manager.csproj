@@ -7,12 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Application\DTOs\" />
     <Folder Include="Application\Mappings\" />
     <Folder Include="Application\Helpers\" />
-    <Folder Include="Application\Services\" />
-    <Folder Include="Common\Response\" />
-    <Folder Include="Domain\Interfaces\" />
     <Folder Include="Domain\Models\" />
     <Folder Include="Migrations\" />
   </ItemGroup>
@@ -27,6 +23,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
 
 </Project>

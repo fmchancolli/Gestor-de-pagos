@@ -15,7 +15,7 @@ namespace Payment_manager.Domain.Entities
         public DateTime FechaVenta { get; set; }
         public EstadoVenta Estado { get; set; }
         public decimal Total { get; set; }
-
+        public decimal SaldoPendiente { get; set; }
         public ICollection<DetalleVenta> Detalles { get; set; }
         public ICollection<Pago> Pagos { get; set; }
     }

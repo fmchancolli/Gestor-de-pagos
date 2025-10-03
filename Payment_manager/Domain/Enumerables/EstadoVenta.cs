@@ -10,7 +10,9 @@
     {
         Pendiente = 0,
         Pagada = 1,
-        Cancelada = 2
+        Cancelada = 2,
+        Parcial= 3
+
     }
 
     public enum TipoAbono
@@ -22,7 +24,8 @@
     public enum EstadoPago
     {
         Completado = 0,
-        Vencido = 1
+        Vencido = 1,
+        Pendiente= 2
     }
 
     public enum TipoRetiro

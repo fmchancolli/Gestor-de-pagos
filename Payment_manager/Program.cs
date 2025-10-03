@@ -1,10 +1,12 @@
 using Microsoft.EntityFrameworkCore;
+using Payment_manager.Application;
 using Payment_manager.Application.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddApplicationLayer(builder.Configuration);
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
